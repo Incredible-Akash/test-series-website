@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Test Series</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Practice Test Series</h1>
+    </header>
+    
+    <main>
+        <div id="upload-container">
+            <h2>Upload your PDF Test</h2>
+            <input type="file" id="pdf-upload" accept="application/pdf">
+        </div>
+
+        <div id="test-container" class="hidden">
+            <h2 id="question-title">Question 1</h2>
+            <p id="question">What is the capital of France?</p>
+
+            <form id="answers-form">
+                <!-- Dynamic question options will appear here -->
+            </form>
+
+            <div id="feedback" class="hidden"></div>
+
+            <button id="submit-btn">Submit Answer</button>
+            <button id="next-btn" class="hidden">Next Question</button>
+        </div>
+        
+        <div id="result" class="hidden">
+            <h2>Your Results</h2>
+            <p id="score"></p>
+            <button id="restart-btn">Restart Test</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Practice Test Series</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.15.349/pdf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
